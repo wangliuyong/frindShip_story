@@ -113,3 +113,10 @@ body {
 #copyright a{
 	color:#666;
 }
+
+
+#sound{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
