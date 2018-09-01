@@ -17,7 +17,7 @@
 
 <body>
 	<div id="mainDiv">
-			<audio autoplay="autoplay"  controls="controls"loop="loop" preload="auto" style="position: absolute;
+			<audio autoplay="autoplay" id="audio" controls="controls"loop="loop" preload="auto" style="position: absolute;
 			left: 90px;
 			top: 59px;"
             src="http://pe41gencs.bkt.clouddn.com/%E9%99%86%E8%99%8E%20-%20%E6%8B%89%E8%BF%87%E5%8B%BE%E7%9A%84.mp3">
@@ -32,13 +32,13 @@
 				<span class="space"/><span class="comments">*/</span><br />
 				Boy i = <span class="keyword">new</span> Boy(<span class="string">"WangLiuyong"</span>);<br />
 				Girl u = <span class="keyword">new</span> Girl(<span class="string">"silly"</span>);<br />
-				<span class="comments">// Nov 2, 2018, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// silly, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
+				<span class="comments">// Nov 10, 2014, We became friends</span><br />
+				i.know(u);<br />
+				<span class="comments">// silly, We went out together for the first time.</span><br />
+				u and me play();<br />
+				<span class="comments">// Since then, I check u every day.</span><br />
+				i.say(u);<br />
+				<span class="comments">// And take care of u and our friendship.</span><br />
 				i.takeCareOf(u);<br />
 				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
 				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
@@ -57,12 +57,12 @@
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						silly, I have fallen in love with you for
+						silly, We've known each other for
 						<div id="elapseClock"></div>
 					</div>
 					
 					<div id="loveu">
-						Love u forever and ever.<br/>
+						We will always be friends<br/>
 						<div class="signature">- Hangzhou</div>
 					</div>
 				</div>
@@ -74,10 +74,16 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+
+		var a = new Audio();
+		if (a.canPlayType('audio/wav')) {
+			a.src = 'http://pe41gencs.bkt.clouddn.com/%E9%99%86%E8%99%8E%20-%20%E6%8B%89%E8%BF%87%E5%8B%BE%E7%9A%84.mp3';
+			a.play();
+		}
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2017, 8, 31);
+		together.setFullYear(2014, 9, 31);
 		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);
