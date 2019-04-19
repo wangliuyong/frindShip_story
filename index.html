@@ -8,6 +8,9 @@
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
+		.auto_msic{
+			display: none;
+		}
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -17,14 +20,9 @@
 
 <body>
 	<div id="mainDiv">
-			<audio autoplay="autoplay" id="audio" controls="controls"loop="loop" preload="auto" style="position: absolute;
-			left: 90px;
-			top: 59px;"
-            src="http://pe41gencs.bkt.clouddn.com/%E9%99%86%E8%99%8E%20-%20%E6%8B%89%E8%BF%87%E5%8B%BE%E7%9A%84.mp3">
-      				你的浏览器不支持audio标签
-			</audio>
-			
+			<iframe class='auto_msic' allow="autoplay" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/545d_065b_5258_c75e797baa11f81cdb68e255aa5c4034.m4a"></iframe>
 		<div id="content">
+
 			<div id="code">
 				<span class="comments">/**</span><br />
 				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
@@ -70,14 +68,14 @@
 		</div>
 		<div id="copyright">
 			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2018 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2014-2019
+			Copyright © 2018 <a href='https://github.com/wangliuyong'>WangLiuYong.com</a> 2019-5200
 		</div>
 	</div>
 	<script type="text/javascript">
 
 		var a = new Audio();
 		if (a.canPlayType('audio/wav')) {
-			a.src = 'http://pe41gencs.bkt.clouddn.com/%E9%99%86%E8%99%8E%20-%20%E6%8B%89%E8%BF%87%E5%8B%BE%E7%9A%84.mp3';
+			a.src = 'https://test-1257826148.cos.ap-guangzhou.myqcloud.com/545d_065b_5258_c75e797baa11f81cdb68e255aa5c4034.m4a';
 			a.play();
 		}
 		var offsetX = $("#loveHeart").width() / 2;
