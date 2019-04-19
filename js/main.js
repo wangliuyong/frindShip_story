@@ -1,8 +1,8 @@
-var a = new Audio();
-if (a.canPlayType('audio/wav')) {
-    a.src = 'https://test-1257826148.cos.ap-guangzhou.myqcloud.com/545d_065b_5258_c75e797baa11f81cdb68e255aa5c4034.m4a';
-    a.play();
-}
+// var a = new Audio();
+// if (a.canPlayType('audio/wav')) {
+//     a.src = '	https://test-1257826148.cos.ap-guangzhou.myqcloud.com/%E8%AF%B7%E5%85%88%E8%AF%B4%E4%BD%A0%E5%A5%BD-%E5%92%8C.mp3';
+//     a.play();
+// }
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
 var together = new Date();
