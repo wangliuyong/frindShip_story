@@ -12,28 +12,7 @@ together.setMinutes(0);
 together.setSeconds(0);
 together.setMilliseconds(0);
 
-if (!document.createElement('canvas').getContext) {
-    var msg = document.createElement("div");
-    msg.id = "errorMsg";
-    msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-    document.body.appendChild(msg);
-    $("#code").css("display", "none")
-    $("#copyright").css("position", "absolute");
-    $("#copyright").css("bottom", "10px");
-    document.execCommand("stop");
-} else {
-    setTimeout(function () {
-        startHeartAnimation();
-    }, 1000);
 
-    timeElapse(together);
-    setInterval(function () {
-        timeElapse(together);
-    }, 500);
-
-    adjustCodePosition();
-    $("#code").typewriter();
-}
 
 
 //音频的自动播放
@@ -61,8 +40,37 @@ document.addEventListener('touchstart', function () {
 button.addEventListener('click',()=>{
     audio.play()
     mask.className='mask_hide'
+    canvasHeart()
+    img1.className='img_to_heart'
+    img2.className='img_to_heart'
 })
 
 
 //button.click()
+
+//画出新的形状
+let canvasHeart=()=>{
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+    } else {
+        setTimeout(function () {
+            startHeartAnimation();
+        }, 1000);
+    
+        timeElapse(together);
+        setInterval(function () {
+            timeElapse(together);
+        }, 500);
+    
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+}
 

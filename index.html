@@ -28,16 +28,80 @@
 		}
 
 		.text{
-			color: #ffe
+			color: #ffe;
+			font-size: 40px;
+
 		}
 
 		#button{
 			margin: 30px;
 			border: none;
-			padding: 5px;
+			padding: 10px;
 			background: #ffe;
-			border-radius: 3px;
+			border-radius: 5px;
 			color: #cccccc;
+			font-size: 35px;
+		}
+		img{
+			width: 100px;
+			height: 100px;
+			transition: all 1.5s ;
+		}
+		.img_no_heart{
+			border-radius: 20px;
+			position: fixed;
+			z-index: 1;
+			top: 50px;
+		}
+
+		.img_no_heart:nth-child(1){
+			left: 50px;
+		}
+		.img_no_heart:nth-child(2){
+			right: 50px;
+		}
+
+
+		.img_to_heart:nth-child(1){
+			top: 36%;
+		}
+
+		.loveHeart{
+			position: relative;
+		}
+
+		.img_to_heart{
+			position:absolute;
+			left: 50%;
+			border-radius: 50%;
+		}
+
+		.img_to_heart:nth-child(1){
+			top: 8%;
+			margin-left: -200px;
+		}
+
+		.img_to_heart:nth-child(2){
+			top: 8%;
+			margin-left: 100px;
+		}
+
+		@media(min-width:300px){
+			.img_to_heart{
+				position:absolute;
+				left: 50%;
+				border-radius: 50%;
+			}
+
+			.img_to_heart:nth-child(1){
+				top: 36%;
+				margin-left: -200px;
+			}
+
+			.img_to_heart:nth-child(2){
+				top: 36%;
+				margin-left: 100px;
+			}
 		}
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
@@ -84,6 +148,8 @@
 				i.liveHappilyWith(u);<br />
 			</div> -->
 			<div id="loveHeart">
+				<img id='img1' class="img_no_heart" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/man.jpg" alt="">
+				<img id='img2' class="img_no_heart" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/woman.jpg" alt="">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
