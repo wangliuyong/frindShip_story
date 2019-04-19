@@ -56,3 +56,13 @@ document.addEventListener('touchstart', function () {
     }
     audioAutoPlay();
 });
+
+//
+button.addEventListener('click',()=>{
+    audio.play()
+    mask.className='mask_hide'
+})
+
+
+//button.click()
+

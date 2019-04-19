@@ -11,6 +11,34 @@
 		.auto_msic{
 			display: none;
 		}
+		.mask{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(7, 17, 27, 0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.mask_hide{
+			display: none;
+		}
+
+		.text{
+			color: #ffe
+		}
+
+		#button{
+			margin: 30px;
+			border: none;
+			padding: 5px;
+			background: #ffe;
+			border-radius: 3px;
+			color: #cccccc;
+		}
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -19,7 +47,12 @@
 </head>
 
 <body>
-	<iframe class='auto_msic' allow="autoplay" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/545d_065b_5258_c75e797baa11f81cdb68e255aa5c4034.m4a"></iframe>
+	<!-- <iframe class='auto_msic' allow="autoplay" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/545d_065b_5258_c75e797baa11f81cdb68e255aa5c4034.m4a"></iframe> -->
+	<div class="mask" id="mask">
+		<span class="text">谨此纪念，我们的友情</span>
+		<button id="button">点此进入</button>
+	</div>
+	<audio id="audio" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/545d_065b_5258_c75e797baa11f81cdb68e255aa5c4034.m4a" ></audio>
 	<div id="mainDiv">
 		<div id="content">
 			<!-- <div id="code">
