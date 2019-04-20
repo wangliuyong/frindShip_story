@@ -1,8 +1,3 @@
-var a = new Audio();
-if (a.canPlayType('audio/wav')) {
-    a.src = 'https://test-1257826148.cos.ap-guangzhou.myqcloud.com/545d_065b_5258_c75e797baa11f81cdb68e255aa5c4034.m4a';
-    a.play();
-}
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
 var together = new Date();
@@ -13,30 +8,10 @@ together.setSeconds(0);
 together.setMilliseconds(0);
 
 
+inIphone()
+autoPlayMusic()
 
-
-//音频的自动播放
-document.addEventListener('DOMContentLoaded', function () {
-    function audioAutoPlay() {
-        var audio = document.getElementById('audio');
-            audio.play();
-        document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
-        }, false);
-    }
-    audioAutoPlay();
-});
-
-//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
-document.addEventListener('touchstart', function () {
-    function audioAutoPlay() {
-        var audio = document.getElementById('audio');
-            audio.play();
-    }
-    audioAutoPlay();
-});
-
-//
+//电脑端
 button.addEventListener('click',()=>{
     audio.play()
     mask.className='mask_hide'
@@ -46,7 +21,7 @@ button.addEventListener('click',()=>{
 })
 
 
-//button.click()
+
 
 //画出新的形状
 let canvasHeart=()=>{
@@ -73,4 +48,40 @@ let canvasHeart=()=>{
         $("#code").typewriter();
     }
 }
+
+
+//手机端
+let inIphone=()=>{
+    //音频的自动播放
+    document.addEventListener('DOMContentLoaded', function () {
+        function audioAutoPlay() {
+            var audio = document.getElementById('audio');
+                audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+        }
+        audioAutoPlay();
+    });
+
+    //--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+    document.addEventListener('touchstart', function () {
+        function audioAutoPlay() {
+            var audio = document.getElementById('audio');
+                audio.play();
+        }
+        audioAutoPlay();
+    });
+}
+
+//背景音乐自动播放
+let autoPlayMusic=()=>{
+    var a = new Audio();
+    if (a.canPlayType('audio/wav')) {
+        a.src = 'https://test-1257826148.cos.ap-guangzhou.myqcloud.com/%E8%AF%B7%E5%85%88%E8%AF%B4%E4%BD%A0%E5%A5%BD-%E5%92%8C.mp3';
+        a.play();
+    }
+}
+
+
 

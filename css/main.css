@@ -1,0 +1,100 @@
+@font-face {
+    font-family: digit;
+    src: url('digital-7_mono.ttf') format("truetype");
+}
+.auto_msic{
+    display: none;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 17, 27, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mask_hide{
+    display: none;
+}
+
+.text{
+    color: #ffe;
+    font-size: 40px;
+
+}
+
+#button{
+    margin: 30px;
+    border: none;
+    padding: 10px;
+    background: #ffe;
+    border-radius: 5px;
+    color: #cccccc;
+    font-size: 35px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    transition: all 1.5s ;
+}
+.img_no_heart{
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+}
+
+.img_no_heart:nth-child(1){
+    left: 50px;
+}
+.img_no_heart:nth-child(2){
+    right: 50px;
+}
+
+
+.img_to_heart:nth-child(1){
+    top: 36%;
+}
+
+.loveHeart{
+    position: relative;
+}
+
+.img_to_heart{
+    position:absolute;
+    left: 50%;
+    border-radius: 50%;
+}
+
+.img_to_heart:nth-child(1){
+    top: 8%;
+    margin-left: -200px;
+}
+
+.img_to_heart:nth-child(2){
+    top: 8%;
+    margin-left: 100px;
+}
+
+@media(min-width:300px){
+    .img_to_heart{
+        position:absolute;
+        left: 50%;
+        border-radius: 50%;
+    }
+
+    .img_to_heart:nth-child(1){
+        top: 32%;
+        margin-left: -200px;
+        
+    }
+
+    .img_to_heart:nth-child(2){
+        top: 32%;
+        margin-left: 100px;
+    }
+}

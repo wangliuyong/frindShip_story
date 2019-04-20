@@ -3,107 +3,7 @@
 <head>
 	<title>Our friendship Story</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-		.auto_msic{
-			display: none;
-		}
-		.mask{
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(7, 17, 27, 0.5);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-		}
-		.mask_hide{
-			display: none;
-		}
-
-		.text{
-			color: #ffe;
-			font-size: 40px;
-
-		}
-
-		#button{
-			margin: 30px;
-			border: none;
-			padding: 10px;
-			background: #ffe;
-			border-radius: 5px;
-			color: #cccccc;
-			font-size: 35px;
-		}
-		img{
-			width: 100px;
-			height: 100px;
-			transition: all 1.5s ;
-		}
-		.img_no_heart{
-			border-radius: 20px;
-			position: fixed;
-			z-index: 1;
-			top: 50px;
-		}
-
-		.img_no_heart:nth-child(1){
-			left: 50px;
-		}
-		.img_no_heart:nth-child(2){
-			right: 50px;
-		}
-
-
-		.img_to_heart:nth-child(1){
-			top: 36%;
-		}
-
-		.loveHeart{
-			position: relative;
-		}
-
-		.img_to_heart{
-			position:absolute;
-			left: 50%;
-			border-radius: 50%;
-		}
-
-		.img_to_heart:nth-child(1){
-			top: 8%;
-			margin-left: -200px;
-		}
-
-		.img_to_heart:nth-child(2){
-			top: 8%;
-			margin-left: 100px;
-		}
-
-		@media(min-width:300px){
-			.img_to_heart{
-				position:absolute;
-				left: 50%;
-				border-radius: 50%;
-			}
-
-			.img_to_heart:nth-child(1){
-				top: 32%;
-				margin-left: -200px;
-			}
-
-			.img_to_heart:nth-child(2){
-				top: 32%;
-				margin-left: 100px;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="./css/main.css">
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
@@ -116,37 +16,9 @@
 		<span class="text">谨此纪念，我们的友情</span>
 		<button id="button">点此进入</button>
 	</div>
-	<audio id="audio" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/545d_065b_5258_c75e797baa11f81cdb68e255aa5c4034.m4a" ></audio>
+	<audio id="audio" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/%E8%AF%B7%E5%85%88%E8%AF%B4%E4%BD%A0%E5%A5%BD-%E5%92%8C.mp3" ></audio>
 	<div id="mainDiv">
 		<div id="content">
-			<!-- <div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"WangLiuyong"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"silly"</span>);<br />
-				<span class="comments">// Nov 10, 2014, We became friends</span><br />
-				i.know(u);<br />
-				<span class="comments">// silly, We went out together for the first time.</span><br />
-				u and me play();<br />
-				<span class="comments">// Since then, I check u every day.</span><br />
-				i.say(u);<br />
-				<span class="comments">// And take care of u and our friendship.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
-			</div> -->
 			<div id="loveHeart">
 				<img id='img1' class="img_no_heart" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/man.jpg" alt="">
 				<img id='img2' class="img_no_heart" src="https://test-1257826148.cos.ap-guangzhou.myqcloud.com/woman.jpg" alt="">
