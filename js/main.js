@@ -24,7 +24,7 @@ button.addEventListener('click',()=>{
 
 
 //画出新的形状
-let canvasHeart=()=>{
+var canvasHeart=()=>{
     if (!document.createElement('canvas').getContext) {
         var msg = document.createElement("div");
         msg.id = "errorMsg";
@@ -51,7 +51,7 @@ let canvasHeart=()=>{
 
 
 //手机端
-let inIphone=()=>{
+function inIphone(){
     //音频的自动播放
     document.addEventListener('DOMContentLoaded', function () {
         function audioAutoPlay() {
@@ -75,7 +75,7 @@ let inIphone=()=>{
 }
 
 //背景音乐自动播放
-let autoPlayMusic=()=>{
+function autoPlayMusic(){
     var a = new Audio();
     if (a.canPlayType('audio/wav')) {
         a.src = 'https://test-1257826148.cos.ap-guangzhou.myqcloud.com/%E8%AF%B7%E5%85%88%E8%AF%B4%E4%BD%A0%E5%A5%BD-%E5%92%8C.mp3';
