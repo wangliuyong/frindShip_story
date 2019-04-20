@@ -2,6 +2,39 @@
     font-family: digit;
     src: url('digital-7_mono.ttf') format("truetype");
 }
+
+@media(min-width:300px) and (max-width:600px){
+    .img_to_heart{
+        position:absolute;
+        left: 50%;
+        border-radius: 50%;
+    }
+
+    .img_to_heart:nth-child(1){
+        top: 32%;
+        margin-left: -200px;
+        
+    }
+
+    .img_to_heart:nth-child(2){
+        top: 32%;
+        margin-left: 100px;
+    }
+}
+
+#mainDiv{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+
+#words,#messages,#loveu,.signature{
+    color:#ffe; 
+}
+
+
+
 .auto_msic{
     display: none;
 }
@@ -19,6 +52,7 @@
 }
 .mask_hide{
     display: none;
+    color: #ffe;
 }
 
 .text{
@@ -80,21 +114,3 @@ img{
     margin-left: 100px;
 }
 
-@media(min-width:300px) and (max-width:400px){
-    .img_to_heart{
-        position:absolute;
-        left: 50%;
-        border-radius: 50%;
-    }
-
-    .img_to_heart:nth-child(1){
-        top: 32%;
-        margin-left: -200px;
-        
-    }
-
-    .img_to_heart:nth-child(2){
-        top: 32%;
-        margin-left: 100px;
-    }
-}

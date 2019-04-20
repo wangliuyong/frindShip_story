@@ -12,6 +12,7 @@ button.addEventListener('click',()=>{
     canvasHeart()
     img1.className='img_to_heart'
     img2.className='img_to_heart'
+ 
 })
 
 
