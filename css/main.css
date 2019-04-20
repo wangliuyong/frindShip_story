@@ -80,7 +80,7 @@ img{
     margin-left: 100px;
 }
 
-@media(min-width:300px){
+@media(min-width:300px) and (max-width:400px){
     .img_to_heart{
         position:absolute;
         left: 50%;
