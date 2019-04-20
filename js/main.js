@@ -1,11 +1,5 @@
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-together.setFullYear(2014, 9, 31);
-together.setHours(20);
-together.setMinutes(0);
-together.setSeconds(0);
-together.setMilliseconds(0);
 
 
 inIphone()
@@ -21,10 +15,15 @@ button.addEventListener('click',()=>{
 })
 
 
-
-
 //画出新的形状
 var canvasHeart=()=>{
+    var together = new Date();
+    together.setFullYear(2014, 9, 31);
+    together.setHours(20);
+    together.setMinutes(0);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
+
     if (!document.createElement('canvas').getContext) {
         var msg = document.createElement("div");
         msg.id = "errorMsg";
